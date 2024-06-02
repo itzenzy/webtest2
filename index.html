@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <section>
+
+        <nav>
+
+            <div class="logo">
+                <img src="image/logo2.jpg">
+            </div>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#servicesproducts">Services & Products</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="#contactus">Contact Us</a></li>
+                <li><a href="login.html">login</a></li>
+                <li><a href="reviews.html">Review forums</a></li>
+                <li><a href="livedis.html">Live Discussion</a></li>
+            </ul>
+
+            <div class="social_icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+        </nav>
+        
+
+        <div id="home" class="main">
+
+            <div class="main_tag">
+                <h1>WELCOME TO<br><span>READ IT</span></h1>
+
+                <p>
+                    Discover your next favorite book, join vibrant discussions, and connect with a community of 
+                    passionate readers. Explore our curated selections and exclusive packages designed to enhance your 
+                    reading experience.
+                </p>
+                <a href="#" class="main_btn">Learn More</a>
+
+            </div>
+
+            <div class="main_img">
+                <img src="image/Banner/B2.png">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--Services-->
+
+    <div class="services">
+        <div class="services_box">
+            <div id="servicesproducts" class="services_card">
+                <i class="fa-solid fa-book"></i>
+                <h3>Books</h3>
+                <p>Large selection of books of different genres.</p>
+            </div>
+            <div class="services_card">
+                <i class="fa-solid fa-gift"></i>
+                <h3>Gift Cards</h3>
+                <p>Purchase gift cards for various amounts.</p>
+            </div>
+            <div class="services_card">
+                <i class="fa-brands fa-wpforms"></i>
+                <h3>Review forums</h3>
+                <p>Participate in forums to review and discuss books.</p>
+            </div>
+            <div class="services_card">
+                <i class="fa-solid fa-comment"></i>
+                <h3>Live Discussion Groups</h3>
+                <p>Join live discussions and book club meetings.</p>
+            </div>
+        </div>
+    </div>
+      
+
+    <!--About-->
+
+<div id="about" class="about">
+
+    <div class="about_image">
+        <img src="image/Banner/B3.jpeg">
+    </div>
+    <div class="about_tag">
+        <h1>About Us</h1>
+        <p>
+            At Read It, we're passionate about connecting readers with their next great book. Our online book 
+            club offers a curated selection of books, engaging review forums, and lively discussion groups. 
+            Whether you're looking for your new favorite read, a thoughtful gift, or a community of fellow book 
+            lovers, Read It has something for everyone. Join us and discover the joy of reading together!
+        </p>
+        <a href="#" class="about_btn">Learn More</a>
+    </div>
+
+</div>
+
+<script>
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            if (this.hash !== "") {
+                e.preventDefault();
+                const target = document.querySelector(this.hash);
+                const offset = 150; 
+
+                window.scrollTo({
+                    top: target.offsetTop - offset,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
+
+
+    <!--Books-->
+
+<div id="books" class="featured_boks">
+    <h1>Book Genres</h1>
+    <div class="featured_book_box">
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Fantasy.jpeg" alt="Fantasy">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Fantasy</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/ScienceFiction.jpeg" alt="Science Fiction">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Science Fiction</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Mystery.jpeg" alt="Mystery">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Mystery</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Thriller.jpeg" alt="Thriller">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Thriller</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Romance.jpeg" alt="Romance">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Romance</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+        
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/HistoricalFiction.jpeg" alt="Historical Fiction">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Historical Fiction</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Horror.jpeg" alt="Horror">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Horror</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Biography.jpeg" alt="Biography">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Biography</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Memoir.jpeg" alt="Memoir">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Memoir</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/SelfHelp.jpeg" alt="Self-Help">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Self-Help</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/YoungAdult.jpeg" alt="Young Adult">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Young Adult</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/ChildrensLiterature.jpeg" alt="Children's Literature">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Children's Literature</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/GraphicNovels.jpeg" alt="Graphic Novels">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Graphic Novels</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/NonFiction.jpeg" alt="Non-Fiction">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Non-Fiction</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+
+        <div class="featured_book_card">
+            <div class="featurde_book_img">
+                <img src="image/Poetry.jpeg" alt="Poetry">
+            </div>
+            <div class="featurde_book_tag">
+                <h2>Poetry</h2>
+                <a href="#" class="f_btn">Learn More</a>
+            </div>               
+        </div>
+    </div>
+</div>
+
+
+
+    
+    <!--Arrivals-->
+
+    <div class="arrivals">
+        <h1>New Book Arrivals</h1>
+
+        <div class="arrivals_box">
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N1.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>The Enchanted Chronicles: Rise of Eldoria</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N2.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Galactic Drift: Beyond the Horizon</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N3.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>The Echo of Shadows</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N4.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Silent Pursuit</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N5.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Whispers of the Heart</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N6.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Beneath the Scarlet Sky</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N7.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Whispers in the Dark</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N8.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Echoes of a Life</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N9.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Fragments of Me: A Journey Through Time</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+            <div class="arrivals_card">
+                <div class="arrivals_image">
+                    <img src="image/New Arrivals/N10.jpeg">
+                </div>
+                <div class="arrivals_tag">
+                    <p>Unlocking Your Potential: A Guide to Personal Growth</p>
+                    <div class="arrivals_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <a href="#" class="arrivals_btn">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <!--reviews-->
+
+    <div class="reviews">
+        <h1>Reviews</h1>
+
+        <div class="review_box">
+
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="image/pfps/P2.png">
+                </div>
+                <div class="card">
+                    <h2>Ryan Gosling</h2>
+                    <p>I've been a member of Read It for six months now, and I couldn't be happier. The selection of books is 
+                        fantastic, and I love the community feel of the review forums and live discussion groups. The box of 
+                        coffee I get every month is a nice touch too!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="image/pfps/P3.jpg">
+                </div>
+                <div class="card">
+                    <h2>Kai Cenat</h2>
+                    <p>Read It has completely transformed my reading habits. I always look forward to the book of the month 
+                        and discovering new genres I wouldn't have picked up otherwise. The custom packages are perfect for 
+                        someone like me who loves historical fiction. Highly recommend!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="image/pfps/P1.jpeg">
+                </div>
+                <div class="card">
+                    <h2>Batman</h2>
+                    <p>I appreciate the variety of services Read It offers. The gift cards make for great presents, and the live 
+                        discussion groups are a wonderful way to connect with other readers. My only suggestion is to expand 
+                        the selection of merchandise. Otherwise, a great experience!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review_card">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="card_top">
+                    <img src="image/pfps/P4.jpg">
+                </div>
+                <div class="card">
+                    <h2>Ryomen Sukuna</h2>
+                    <p>Joining Read It has been one of the best decisions I've made. The advanced package gives me access to 
+                        so many books and all the forums, which is amazing for a bookworm like me. Plus, the charity book 
+                        donation program is such a thoughtful initiative. Keep up the great work!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!--Banner-->
+
+    <div class="banner">
+        <a href="#" class="banner_btn">Learn More</a>
+    </div>
+
+
+
+
+
+    <!--Blog-->
+    
+    <div class="blog">
+        <h1>Other Services</h1>
+        <div class="blog_box">
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/Other Services/OS1.jpeg" alt="Blog 1">
+                </div>
+                <div class="blog_tag">
+                    <h2>Box of Refreshments</h2>
+                    <p>Enhance your reading experience with our delightful boxes of refreshments. Each box includes a selection of premium coffee, tea, or hot chocolate blends to enjoy while you dive into your favorite book.</p>
+                    <div class="blog_icon">
+                    </div>
+                </div>
+            </div>
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/Other Services/OS2.jpeg" alt="Blog 2">
+                </div>
+                <div class="blog_tag">
+                    <h2>Members’ Book of the Month</h2>
+                    <p>Discover new favorites with our Members' Book of the Month. Each month, we handpick a special book across various genres to keep our members engaged and excited about their next read.</p>
+                    <div class="blog_icon">
+                    </div>
+                </div>
+            </div>
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/Other Services/OS3.jpeg" alt="Blog 3">
+                </div>
+                <div class="blog_tag">
+                    <h2>Merchandise</h2>
+                    <p>Show off your love for reading with our exclusive merchandise. From bookmarks and mugs to book bags and apparel, our collection has something for every book lover. Perfect for personal use or as a gift for fellow readers.</p>
+                    <div class="blog_icon">
+                    </div>
+                </div>
+            </div>
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/Other Services/OS4.jpeg" alt="Blog 4">
+                </div>
+                <div class="blog_tag">
+                    <h2>Charity Book Donation</h2>
+                    <p>Give back with our Charity Book Donation program. For every subscription, a book is donated to a charity, helping to spread the joy of reading to those in need. Join us in making a difference, one book at a time.</p>
+                    <div class="blog_icon">
+                    </div>
+                </div>
+            </div>
+            <div class="blog_card">
+                <div class="blog_img">
+                    <img src="image/Other Services/OS5.jpeg" alt="Blog 5">
+                </div>
+                <div class="blog_tag">
+                    <h2>Gift Hampers</h2>
+                    <p>Surprise your loved ones with our thoughtfully curated gift hampers. Each hamper includes a selection of books, refreshments, and exclusive merchandise, making it the perfect gift for any occasion.</p>
+                    <div class="blog_icon">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Footer-->
+
+    <footer>
+        <div id="contactus" class="footer_main">
+
+            <div class="tag">
+                <img src="image/logo2.jpg">
+                <p>
+                    Unlock a world of books, vibrant discussions, and exclusive perks. Join our community and elevate your reading journey with Read It!
+                </p>
+
+            </div>
+
+            <div class="tag">
+                <h1>Quick Link</h1>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services & Products</a>
+                <a href="#">Packages</a>
+                <a href="#">Contact Us</a>
+                <a href="#">login</a>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Contact Info</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+94 888 888 888</a>
+                <a href="#"><i class="fa-solid fa-phone"></i>+94 999 999 999</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>readit@gmail.com</a>
+                
+            </div>
+
+            <div class="tag">
+                <h1>Follow Us</h1>
+                <div class="social_link">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="tag">
+                <div class="search_bar">
+                    <input type="text" placeholder="You email id here">
+                    <button type="submit">Subscribe</button>
+                </div>                
+            </div>            
+            
+        </div>
+
+        <p class="end">Designed By<span></i>Akash Dissanayake</span></p>
+
+    </footer>
+
+
+
+
+
+    
+</body>
+</html>

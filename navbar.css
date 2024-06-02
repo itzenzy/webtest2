@@ -1,0 +1,67 @@
+/* Reset margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Style for the navigation section */
+section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed; /* Fix the nav bar to the top */
+    top: 0; /* Ensure the nav bar is positioned at the top */
+    z-index: 100; /* Ensure the nav bar stays above other elements */
+}
+
+/* Style for the logo image within the nav bar */
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+    border-radius: 10%;
+}
+
+/* Style for the unordered list within the nav bar */
+section nav ul {
+    list-style: none;
+}
+
+/* Style for each list item within the nav bar */
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+/* Style for the links within each list item */
+section nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Hover effect for the links within each list item */
+section nav li a:hover {
+    color: #089da1;
+}
+
+/* Style for social icons within the nav bar */
+section nav .social_icon i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+/* Hover effect for the social icons */
+section nav .social_icon i:hover {
+    color: #089da1;
+    cursor: pointer;
+}
+
+/* Add top margin to the body to prevent content from being hidden behind the nav bar */
+body {
+    margin-top: 60px; /* Adjust the value to match the height of the nav bar */
+}

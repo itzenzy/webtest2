@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Review - Read It</title>
+  <link rel="stylesheet" href="reviewsstyle.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <section>
+
+    <nav>
+  
+        <div class="logo">
+            <img src="image/logo2.jpg">
+        </div>
+  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="#servicesproducts">Services & Products</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="index.html#contactus">Contact Us</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="reviews.html">Review forums</a></li>
+            <li><a href="livedis.html">Live Discussion</a></li>
+        </ul>
+  
+        <div class="social_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+  
+    </nav>
+  </section>
+<h1>Review Forums</h1>
+  <main>
+    <section class="review-section">
+      <h1>Submit Your Review</h1>
+      <form class="review-form" action="/submit-review" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+          <option value="5">5 Stars</option>
+          <option value="4">4 Stars</option>
+          <option value="3">3 Stars</option>
+          <option value="2">2 Stars</option>
+          <option value="1">1 Star</option>
+        </select>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" required></textarea>
+
+        <label for="photo">Upload Photo (optional):</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

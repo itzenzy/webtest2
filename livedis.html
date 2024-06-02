@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Discussions - Read It</title>
+  <link rel="stylesheet" href="livedissstyle.css">
+  <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+  <section>
+
+    <nav>
+  
+        <div class="logo">
+            <img src="image/logo2.jpg">
+        </div>
+  
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="#servicesproducts">Services & Products</a></li>
+            <li><a href="packages.html">Packages</a></li>
+            <li><a href="index.html#contactus">Contact Us</a></li>
+            <li><a href="login.html">login</a></li>
+            <li><a href="reviews.html">Review forums</a></li>
+            <li><a href="livedis.html">Live Discussion</a></li>
+        </ul>
+  
+        <div class="social_icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+  
+    </nav>
+  </section>
+  <main>
+    <section class="discussion-section">
+      <h1>Live Discussions</h1>
+      <div class="discussion-form">
+        <h2>Start a New Discussion</h2>
+        <form action="/start-discussion" method="POST">
+          <label for="topic">Topic:</label>
+          <input type="text" id="topic" name="topic" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Start Discussion</button>
+        </form>
+      </div>
+      <div class="discussion-list">
+        <h2>Ongoing Discussions</h2>
+        <ul>
+          <li>
+            <h3>Favorite Mystery Books</h3>
+            <p>Started by Drake</p>
+            <button class="join-button">Join Discussion</button>
+          </li>
+          <li>
+            <h3>Best Sci-Fi Novels of 2024</h3>
+            <p>Started by Kendrick Lamar</p>
+            <button class="join-button">Join Discussion</button>
+          </li>
+          <!-- More discussion topics can be added here -->
+        </ul>
+      </div>
+      <div class="discussion-messages">
+        <h2>Discussion: Favorite Mystery Books</h2>
+        <div class="messages">
+          <!-- Messages will be dynamically loaded here -->
+          <div class="message">
+            <p><strong>Metro Boomin:</strong> I think 'The Silent Patient' is a great mystery book! What do you all think?</p>
+          </div>
+          <div class="message">
+            <p><strong>J. Cole:</strong> Absolutely agree! It's a fantastic read with an unexpected twist.</p>
+          </div>
+        </div>
+        <form class="message-form" action="/send-message" method="POST">
+          <label for="new-message">Your Message:</label>
+          <textarea id="new-message" name="new-message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
